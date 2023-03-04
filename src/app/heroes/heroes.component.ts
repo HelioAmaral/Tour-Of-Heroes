@@ -30,11 +30,11 @@ export class HeroesComponent {
   heroes: Hero[] = [];
 
   //set a property of type Hero, Hero is an interface created and imported into this component
-  selectedHero?: Hero;
+  //selectedHero?: Hero;
 
   //event handler - when the user clicks on a hero this method is called and assigns the value hero (the clicked hero on the template) to the property selected hero
-  onSelect(hero: Hero) {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
+  //onSelect(hero: Hero) {
+  //  this.selectedHero = hero;
+  //  this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
+  //}
 }

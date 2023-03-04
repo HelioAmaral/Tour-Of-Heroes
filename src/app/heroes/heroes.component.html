@@ -2,11 +2,11 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
     <!--ngFor loops through the mock up array of heroes-->
-    <li  *ngFor="let hero of heroes">
-        <button [class.selected]="hero === selectedHero" (click)="onSelect(hero)" type="button">
+    <li  *ngFor="let hero of heroes" >
+        <a routerLink="/detail/{hero.id}">
             <span class="badge">{{hero.id}}</span>
-            <span class="name">{{hero.name}}</span>
-        </button>
+            <span>{{hero.name}}</span>
+        </a>
     </li>
 </ul>
 
